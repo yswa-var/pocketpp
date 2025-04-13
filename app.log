@@ -67,3 +67,55 @@ AttributeError: 'Article' object has no attribute 'category'. Did you mean: 'cat
 2025-04-14 00:36:23,533 - INFO - Displayed article ID: 1, Title: Thomas Jefferson, Category: General
 2025-04-14 00:36:23,533 - INFO - Displayed article ID: 2, Title: Celebrating the best: meet our 2025 TradingView Wizards — TradingView Blog, Category: General
 2025-04-14 00:36:23,533 - INFO - Closing session
+2025-04-14 00:58:46,515 - INFO - Jinja2 template 'article.html' loaded successfully from /Users/yash/Downloads/exercises/pocketpp/src/pocketpp/templates
+2025-04-14 00:58:46,515 - INFO - Starting 'add' command with URL: https://wikileaks.org/fishrot/, Category: General
+2025-04-14 00:58:46,515 - INFO - Scraping and summarizing the URL
+2025-04-14 00:58:59,817 - INFO - Scraped data: Title=Fishrot Files, URL=https://wikileaks.org/fishrot/
+2025-04-14 00:58:59,818 - INFO - Looking for category: General
+2025-04-14 00:58:59,828 - INFO - Using category ID: 1
+2025-04-14 00:58:59,835 - INFO - Saved article with ID: 3
+2025-04-14 00:58:59,836 - INFO - Generated HTML at: articles/3.html
+2025-04-14 00:58:59,836 - INFO - Closing session
+2025-04-14 01:00:34,325 - INFO - Jinja2 template 'article.html' loaded successfully from /Users/yash/Downloads/exercises/pocketpp/src/pocketpp/templates
+2025-04-14 01:00:34,325 - INFO - Starting 'list' command
+2025-04-14 01:00:34,329 - INFO - Found 3 articles
+2025-04-14 01:00:34,330 - INFO - Displayed article ID: 1, Title: Thomas Jefferson, Category: General
+2025-04-14 01:00:34,330 - INFO - Displayed article ID: 2, Title: Celebrating the best: meet our 2025 TradingView Wizards — TradingView Blog, Category: General
+2025-04-14 01:00:34,330 - INFO - Displayed article ID: 3, Title: Fishrot Files, Category: General
+2025-04-14 01:00:34,330 - INFO - Closing session
+2025-04-14 01:01:35,606 - INFO - Jinja2 template 'article.html' loaded successfully from /Users/yash/Downloads/exercises/pocketpp/src/pocketpp/templates
+2025-04-14 01:01:35,607 - INFO - Starting 'read' command for article ID: 3
+2025-04-14 01:01:35,607 - INFO - Opening HTML file: articles/3.html
+2025-04-14 01:02:20,417 - INFO - Jinja2 template 'article.html' loaded successfully from /Users/yash/Downloads/exercises/pocketpp/src/pocketpp/templates
+2025-04-14 01:02:20,417 - INFO - Starting 'read' command for article ID: 3
+2025-04-14 01:02:20,417 - INFO - Opening HTML file: articles/3.html
+2025-04-14 01:03:33,744 - INFO - Jinja2 template 'article.html' loaded successfully from /Users/yash/Downloads/exercises/pocketpp/src/pocketpp/templates
+2025-04-14 01:03:33,745 - INFO - Starting 'add' command with URL: https://www.xda-developers.com/assassins-creed-shadows-review-pc/, Category: General
+2025-04-14 01:03:33,745 - INFO - Scraping and summarizing the URL
+2025-04-14 01:03:34,567 - ERROR - Error in 'add' command: Article `download()` failed with ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) on URL https://www.xda-developers.com/assassins-creed-shadows-review-pc/
+Traceback (most recent call last):
+  File "/Users/yash/Downloads/exercises/pocketpp/src/pocketpp/app.py", line 48, in add
+    data = scrape_and_summarize(url)
+  File "/Users/yash/Downloads/exercises/pocketpp/src/pocketpp/scraper.py", line 17, in scrape_and_summarize
+    article.parse()
+    ~~~~~~~~~~~~~^^
+  File "/Users/yash/Downloads/exercises/pocketpp/venv/lib/python3.13/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/yash/Downloads/exercises/pocketpp/venv/lib/python3.13/site-packages/newspaper/article.py", line 531, in throw_if_not_downloaded_verbose
+    raise ArticleException('Article `download()` failed with %s on URL %s' %
+          (self.download_exception_msg, self.url))
+newspaper.article.ArticleException: Article `download()` failed with ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) on URL https://www.xda-developers.com/assassins-creed-shadows-review-pc/
+2025-04-14 01:03:34,568 - INFO - Closing session
+2025-04-14 01:16:35,359 - INFO - Jinja2 template 'article.html' loaded successfully from /Users/yash/Downloads/exercises/pocketpp/src/pocketpp/templates
+2025-04-14 01:16:35,359 - INFO - Starting 'add' command with URL: https://www.xda-developers.com/assassins-creed-shadows-review-pc/, Category: General
+2025-04-14 01:16:35,359 - INFO - Scraping and summarizing the URL
+2025-04-14 01:16:44,569 - INFO - Scraped data: Title=Assassin’s Creed Shadows (PC) review: Beauty, brutality, and the burden of bloat, URL=https://www.xda-developers.com/assassins-creed-shadows-review-pc/
+2025-04-14 01:16:44,569 - INFO - Looking for category: General
+2025-04-14 01:16:44,575 - INFO - Using category ID: 1
+2025-04-14 01:16:44,582 - INFO - Saved article with ID: 4
+2025-04-14 01:16:44,582 - INFO - Generated HTML at: articles/4.html
+2025-04-14 01:16:44,582 - INFO - Closing session
+2025-04-14 01:17:12,129 - INFO - Jinja2 template 'article.html' loaded successfully from /Users/yash/Downloads/exercises/pocketpp/src/pocketpp/templates
+2025-04-14 01:17:12,130 - INFO - Starting 'read' command for article ID: 4
+2025-04-14 01:17:12,130 - INFO - Opening HTML file: articles/4.html

@@ -3,28 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ article.title }}</title>
+    <link rel="stylesheet" href="/static/styles.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         img {
             max-width: 100%;
             height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
         }
     </style>
 </head>
 
 <body>
-    <h1>{{ article.title }}</h1>
-    {% if article.image_url %}
-    <img src="{{ article.image_url }}" alt="Article image">
-    {% endif %}
-    <p><strong>Summary:</strong> {{ article.summary }}</p>
-    <hr>
-    <p>{{ article.content }}</p>
+    <main>
+        <h1>{{ article.title }}</h1>
+        {% if article.image_url %}
+        <img src="{{ article.image_url }}" alt="Article image">
+        {% endif %}
+        <p><strong>Summary:</strong> {{ article.summary }}</p>
+        <hr>
+        <p>{{ article.content }}</p>
+    </main>
 </body>
 
 </html>

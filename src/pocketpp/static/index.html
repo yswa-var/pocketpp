@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Saver</title>
+    <!-- Importing a modern, friendly font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Pocket ++</h1>
+            <p>Your personal summarizing agent for saving and reading articles.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="add-article">
+            <h2>Add an Article</h2>
+            <form id="add-article-form">
+                <div class="form-group">
+                    <label for="url">URL:</label>
+                    <input type="text" id="url" name="url" placeholder="Enter article URL" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <input type="text" id="category" name="category" value="General">
+                </div>
+                <button type="submit">Add Article</button>
+            </form>
+        </section>
+
+        <section id="saved-articles">
+            <h2>Saved Articles</h2>
+            <ul id="article-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Article Saver. All rights reserved.</p>
+    </footer>
+
+    <script src="/static/scripts.js"></script>
+</body>
+
+</html>

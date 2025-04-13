@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>An Introduction to Python FastAPI & Swagger UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>An Introduction to Python FastAPI & Swagger UI</h1>
+    
+    <img src="https://miro.medium.com/v2/resize:fit:962/1*gM7QXrp65WNwKC8-i64bzA.png" alt="Article image">
+    
+    <p><strong>Summary:</strong> Here’s a concise summary of the article in 67 words:
+
+This tutorial introduces FastAPI, a modern Python framework for building high-performance RESTful APIs. It highlights its ease of use, rapid development capabilities, and production readiness – particularly beneficial for converting from Flask.  The article demonstrates creating a simple API with Uvicorn as an ASGI server and automatically generates Swagger UI documentation via the `/docs` endpoint for easy testing and exploration.</p>
+    <hr>
+    <p>An Introduction to Python FastAPI & Swagger UI Aysel Aydin · Follow 3 min read · Jan 7, 2023 -- Listen Share
+
+In this Python tutorial, you will learn about FastAPI that a Web framework for developing RESTful APIs in Python.
+
+FastAPI is a modern API framework in Python.
+
+Very easy to learn the framework and develop the code
+
+Easy to convert the code from Flask to FastAPI
+
+The framework is production ready and it is widely used in industry.
+
+Faster performance compared to other frameworks
+
+Works on the Python version greater than 3.6
+
+API documents will get generated automatically without any extra lines of code and additional effort.
+
+Installation
+
+To develop and run a fastapi application, you need to install 2 packages.
+
+The first package is the fastapi package
+
+pip install fastapi
+
+The second one is the ASGI server for deploying the application in production.
+
+pip install uvicorn
+
+Create a First API
+
+from fastapi import FastAPI
+
+
+
+app = FastAPI()
+
+
+
+@app.get("/")
+
+async def my_first_get_api():
+
+return {"message":"First FastAPI example"}
+
+After writing the code, now you need a server program to run it. You should run the code below in the terminal.
+
+python -m uvicorn main:app --reload
+
+After successfully running the code, the app will run on port 8000. Open the URL http://127.0.0.1:8000 in your web browser. You should see a screen like the image below.
+
+Now let's check the API documentation of this application. Type the URL http://127.0.0.1:8000/docs This will open up the Swagger UI
+
+Expand the “My First Get Api”
+
+Click the “Try it out” button in the upper right corner. The Execute button appears on the screen.</p>
+</body>
+
+</html>
