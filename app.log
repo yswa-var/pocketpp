@@ -1,0 +1,69 @@
+2025-04-14 00:26:01,689 - ERROR - Template not found: 'article.html' not found in search path: 'templates'
+2025-04-14 00:26:58,514 - INFO - Jinja2 template 'article.html' loaded successfully from /Users/yash/Downloads/exercises/pocketpp/src/pocketpp/templates
+2025-04-14 00:26:58,514 - INFO - Starting 'add' command with URL: https://en.wikipedia.org/wiki/Thomas_Jefferson, Category: None
+2025-04-14 00:26:58,514 - INFO - Scraping and summarizing the URL
+2025-04-14 00:27:06,617 - INFO - Scraped data: Title=Thomas Jefferson, URL=https://en.wikipedia.org/wiki/Thomas_Jefferson
+2025-04-14 00:27:06,617 - INFO - Looking for category: History
+2025-04-14 00:27:06,619 - INFO - Category 'History' not found. Creating it.
+2025-04-14 00:27:06,621 - INFO - Created category: History
+2025-04-14 00:27:06,622 - INFO - Using category ID: 2
+2025-04-14 00:27:06,624 - INFO - Saved article with ID: 3
+2025-04-14 00:27:06,625 - INFO - Generated HTML at: articles/3.html
+2025-04-14 00:27:06,625 - INFO - Closing session
+2025-04-14 00:28:08,122 - INFO - Jinja2 template 'article.html' loaded successfully from /Users/yash/Downloads/exercises/pocketpp/src/pocketpp/templates
+2025-04-14 00:28:08,123 - INFO - Starting 'list' command
+2025-04-14 00:28:08,126 - INFO - Found 3 articles
+2025-04-14 00:28:08,126 - ERROR - Error in 'list' command: 'Article' object has no attribute 'category'
+Traceback (most recent call last):
+  File "/Users/yash/Downloads/exercises/pocketpp/src/pocketpp/app.py", line 111, in list
+    f"ID: {a.id} | {a.title}\nCategory: {a.category.name}\nSummary: {a.summary}\n---")
+                                         ^^^^^^^^^^
+AttributeError: 'Article' object has no attribute 'category'. Did you mean: 'category_id'?
+2025-04-14 00:28:08,127 - INFO - Closing session
+2025-04-14 00:30:35,515 - INFO - Jinja2 template 'article.html' loaded successfully from /Users/yash/Downloads/exercises/pocketpp/src/pocketpp/templates
+2025-04-14 00:30:35,515 - INFO - Starting 'list' command
+2025-04-14 00:30:35,520 - INFO - Found 3 articles
+2025-04-14 00:30:35,521 - INFO - Displayed article ID: 1, Title: Thomas Jefferson, Category: testing
+2025-04-14 00:30:35,521 - INFO - Displayed article ID: 2, Title: yswa-var/Resume-generator-lg: intelligent resume creator with good ATS Score, Category: testing
+2025-04-14 00:30:35,521 - INFO - Displayed article ID: 3, Title: Thomas Jefferson, Category: History
+2025-04-14 00:30:35,521 - INFO - Closing session
+2025-04-14 00:30:59,193 - INFO - Jinja2 template 'article.html' loaded successfully from /Users/yash/Downloads/exercises/pocketpp/src/pocketpp/templates
+2025-04-14 00:30:59,194 - INFO - Starting 'add' command with URL: https://en.wikipedia.org/wiki/Thomas_Jefferson, Category: General
+2025-04-14 00:30:59,194 - INFO - Scraping and summarizing the URL
+2025-04-14 00:31:06,952 - INFO - Scraped data: Title=Thomas Jefferson, URL=https://en.wikipedia.org/wiki/Thomas_Jefferson
+2025-04-14 00:31:06,952 - INFO - Looking for category: General
+2025-04-14 00:31:06,957 - INFO - Category 'General' not found. Creating it.
+2025-04-14 00:31:06,959 - INFO - Created category: General
+2025-04-14 00:31:06,960 - INFO - Using category ID: 1
+2025-04-14 00:31:06,962 - INFO - Saved article with ID: 1
+2025-04-14 00:31:06,963 - INFO - Generated HTML at: articles/1.html
+2025-04-14 00:31:06,963 - INFO - Closing session
+2025-04-14 00:31:10,556 - INFO - Jinja2 template 'article.html' loaded successfully from /Users/yash/Downloads/exercises/pocketpp/src/pocketpp/templates
+2025-04-14 00:31:10,557 - INFO - Starting 'list' command
+2025-04-14 00:31:10,560 - INFO - Found 1 articles
+2025-04-14 00:31:10,561 - INFO - Displayed article ID: 1, Title: Thomas Jefferson, Category: General
+2025-04-14 00:31:10,561 - INFO - Closing session
+2025-04-14 00:31:14,210 - INFO - Jinja2 template 'article.html' loaded successfully from /Users/yash/Downloads/exercises/pocketpp/src/pocketpp/templates
+2025-04-14 00:31:14,210 - INFO - Starting 'read' command for article ID: 1
+2025-04-14 00:31:14,210 - INFO - Opening HTML file: articles/1.html
+2025-04-14 00:33:12,165 - INFO - Jinja2 template 'article.html' loaded successfully from /Users/yash/Downloads/exercises/pocketpp/src/pocketpp/templates
+2025-04-14 00:33:12,165 - INFO - Starting 'add' command with URL: https://www.tradingview.com/blog/en/2025-tradingview-wizards-51581/, Category: General
+2025-04-14 00:33:12,165 - INFO - Scraping and summarizing the URL
+2025-04-14 00:33:18,887 - INFO - Scraped data: Title=Celebrating the best: meet our 2025 TradingView Wizards — TradingView Blog, URL=https://www.tradingview.com/blog/en/2025-tradingview-wizards-51581/
+2025-04-14 00:33:18,888 - INFO - Looking for category: General
+2025-04-14 00:33:18,894 - INFO - Using category ID: 1
+2025-04-14 00:33:18,899 - INFO - Saved article with ID: 2
+2025-04-14 00:33:18,900 - INFO - Generated HTML at: articles/2.html
+2025-04-14 00:33:18,900 - INFO - Closing session
+2025-04-14 00:33:39,214 - INFO - Jinja2 template 'article.html' loaded successfully from /Users/yash/Downloads/exercises/pocketpp/src/pocketpp/templates
+2025-04-14 00:33:39,214 - INFO - Starting 'read' command for article ID: 1
+2025-04-14 00:33:39,214 - INFO - Opening HTML file: articles/1.html
+2025-04-14 00:34:01,227 - INFO - Jinja2 template 'article.html' loaded successfully from /Users/yash/Downloads/exercises/pocketpp/src/pocketpp/templates
+2025-04-14 00:34:01,228 - INFO - Starting 'read' command for article ID: 2
+2025-04-14 00:34:01,228 - INFO - Opening HTML file: articles/2.html
+2025-04-14 00:36:23,525 - INFO - Jinja2 template 'article.html' loaded successfully from /Users/yash/Downloads/exercises/pocketpp/src/pocketpp/templates
+2025-04-14 00:36:23,526 - INFO - Starting 'list' command
+2025-04-14 00:36:23,532 - INFO - Found 2 articles
+2025-04-14 00:36:23,533 - INFO - Displayed article ID: 1, Title: Thomas Jefferson, Category: General
+2025-04-14 00:36:23,533 - INFO - Displayed article ID: 2, Title: Celebrating the best: meet our 2025 TradingView Wizards — TradingView Blog, Category: General
+2025-04-14 00:36:23,533 - INFO - Closing session

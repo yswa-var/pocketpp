@@ -23,4 +23,3 @@ def test_author():
     import pocketpp
     assert hasattr(pocketpp, "__author__")
     assert isinstance(pocketpp.__author__, str)
-
